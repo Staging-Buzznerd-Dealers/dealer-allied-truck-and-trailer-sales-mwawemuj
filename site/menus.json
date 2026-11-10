@@ -9,19 +9,19 @@
           "id": "trucks",
           "label": "Trucks",
           "type": "url",
-          "url": "https://www.alliedtruckandtrailersales.com/trucks"
+          "url": "https://www.alliedtruckandtrailersales.com/inventory/?/listings/for-sale/trucks/27?DSCompanyID=9552&settingsCRMID=359447"
         },
         {
           "id": "trailers",
           "label": "Trailers",
           "type": "url",
-          "url": "https://www.alliedtruckandtrailersales.com/trailers"
+          "url": "https://www.alliedtruckandtrailersales.com/inventory/?/listings/for-sale/trailers/28?DSCompanyID=9552&settingsCRMID=359447"
         },
         {
           "id": "machinery",
           "label": "Machinery",
           "type": "url",
-          "url": "https://www.alliedtruckandtrailersales.com/machinery"
+          "url": "https://www.alliedtruckandtrailersales.com/inventory/?/listings/for-sale/construction-equipment/4?DSCompanyID=9552&settingsCRMID=359447"
         },
         {
           "id": "rental",
@@ -39,13 +39,13 @@
           "id": "finance",
           "label": "Finance",
           "type": "url",
-          "url": "https://www.alliedtruckandtrailersales.com/finance"
+          "url": "https://app.gocurrency.com/?vendorID=112722&utm_source=www.alliedtruckandtrailersales.com&_gl=1*eiixov*_gcl_au*NzMwMjQ4MDQ5LjE3OTQzMzI5NjA."
         },
         {
           "id": "contact",
           "label": "Contact",
           "type": "url",
-          "url": "https://www.alliedtruckandtrailersales.com/contact"
+          "url": "https://www.alliedtruckandtrailersales.com/contact.htm"
         },
         {
           "id": "about",
