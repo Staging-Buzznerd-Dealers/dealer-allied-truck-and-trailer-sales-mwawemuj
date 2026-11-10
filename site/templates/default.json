@@ -285,7 +285,10 @@
                 {
                   "id": "map",
                   "type": "location-map",
-                  "props": {}
+                  "props": {
+                    "address": "2804 US Highway 220, Madison, NC 27025",
+                    "mapUrl": "https://www.google.com/maps/place/2804+US-220,+Madison,+NC+27025/@36.323546,-79.946094,770m/data=!3m1!1e3!4m6!3m5!1s0x8852fae6689268fb:0x88e1efdcbf20537c!8m2!3d36.3235464!4d-79.9460939!16s%2Fg%2F11cnd7cyk7!5m1!1e3?hl=en-US&entry=ttu&g_ep=EgoyMDI2MTEwNC4wIKXMDSoASAFQAw%3D%3D"
+                  }
                 }
               ]
             }
