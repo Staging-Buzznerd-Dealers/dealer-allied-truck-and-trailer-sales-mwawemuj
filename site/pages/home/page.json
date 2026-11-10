@@ -2,6 +2,54 @@
   "version": 2,
   "nodes": [
     {
+      "id": "hero-slider",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "hero-slider",
+        "values": {
+          "slides": []
+        }
+      }
+    },
+    {
+      "id": "category-tiles",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "category-tiles",
+        "values": {
+          "tiles": [
+            {
+              "image": {
+                "src": "/tile-trucks.jpg",
+                "alt": "Trucks",
+                "width": 555,
+                "height": 295
+              },
+              "url": "https://www.alliedtruckandtrailersales.com/trucks"
+            },
+            {
+              "image": {
+                "src": "/tile-trailers.jpg",
+                "alt": "Trailers",
+                "width": 555,
+                "height": 295
+              },
+              "url": "https://www.alliedtruckandtrailersales.com/trailers"
+            },
+            {
+              "image": {
+                "src": "/tile-machinery.jpg",
+                "alt": "Lifts & Machinery",
+                "width": 555,
+                "height": 295
+              },
+              "url": "https://www.alliedtruckandtrailersales.com/machinery"
+            }
+          ]
+        }
+      }
+    },
+    {
       "id": "rentals",
       "type": "section",
       "props": {
@@ -52,97 +100,6 @@
                     "widget": "inventory-carousel",
                     "config": {
                       "heading": "Available for rent"
-                    }
-                  }
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "tiles",
-      "type": "section",
-      "props": {
-        "width": "full",
-        "paddingY": 0
-      },
-      "children": [
-        {
-          "id": "tiles-row",
-          "type": "row",
-          "props": {
-            "gap": 0
-          },
-          "children": [
-            {
-              "id": "tile-trucks",
-              "type": "column",
-              "props": {
-                "span": 4
-              },
-              "children": [
-                {
-                  "id": "tile-trucks-img",
-                  "type": "image",
-                  "props": {
-                    "image": {
-                      "src": "/tile-trucks.jpg",
-                      "alt": "Trucks",
-                      "width": 555,
-                      "height": 295
-                    },
-                    "link": {
-                      "url": "https://www.alliedtruckandtrailersales.com/trucks"
-                    }
-                  }
-                }
-              ]
-            },
-            {
-              "id": "tile-trailers",
-              "type": "column",
-              "props": {
-                "span": 4
-              },
-              "children": [
-                {
-                  "id": "tile-trailers-img",
-                  "type": "image",
-                  "props": {
-                    "image": {
-                      "src": "/tile-trailers.jpg",
-                      "alt": "Trailers",
-                      "width": 555,
-                      "height": 295
-                    },
-                    "link": {
-                      "url": "https://www.alliedtruckandtrailersales.com/trailers"
-                    }
-                  }
-                }
-              ]
-            },
-            {
-              "id": "tile-machinery",
-              "type": "column",
-              "props": {
-                "span": 4
-              },
-              "children": [
-                {
-                  "id": "tile-machinery-img",
-                  "type": "image",
-                  "props": {
-                    "image": {
-                      "src": "/tile-machinery.jpg",
-                      "alt": "Lifts & Machinery",
-                      "width": 555,
-                      "height": 295
-                    },
-                    "link": {
-                      "url": "https://www.alliedtruckandtrailersales.com/machinery"
                     }
                   }
                 }

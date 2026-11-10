@@ -1,0 +1,82 @@
+{
+  "version": 2,
+  "id": "hero-slider",
+  "name": "Hero image slider",
+  "css": "[data-bz-node=\"hero-slides\"]{position:relative;min-height:calc(730 * var(--u));background:#e9e6df;gap:0}\n[data-bz-node=\"hero-slides\"] img{display:block;width:100%;height:calc(730 * var(--u));object-fit:cover}\n[data-bz-node=\"hero-slides\"] .bz-col,[data-bz-node=\"hero-slides\"] .bz-block{margin:0;padding:0}\n[data-bz-node=\"hero-dots\"]{position:absolute;left:0;right:0;bottom:calc(18 * var(--u));display:flex;justify-content:center;gap:10px;z-index:2}\n[data-bz-node=\"hero-dots\"] .bz-dot{width:14px;height:14px;border-radius:50%;border:2px solid #fff;background:transparent;padding:0;cursor:pointer}\n[data-bz-node=\"hero-dots\"] .bz-dot[aria-current=\"true\"]{background:#fff}\n",
+  "js": "",
+  "props": [
+    {
+      "key": "slides",
+      "type": "list",
+      "label": "Slides",
+      "fields": [
+        {
+          "key": "image",
+          "type": "image",
+          "label": "Image"
+        },
+        {
+          "key": "url",
+          "type": "url",
+          "label": "Links to (optional)"
+        }
+      ]
+    },
+    {
+      "key": "autoplay",
+      "type": "number",
+      "label": "Seconds between slides",
+      "default": 5
+    }
+  ],
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "section",
+      "props": {
+        "width": "full",
+        "paddingY": 0
+      },
+      "children": [
+        {
+          "id": "hero-slides",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "behaviour": "rotator",
+            "behaviourOptions": "{\"autoplay\":5000}"
+          },
+          "children": [
+            {
+              "id": "hero-slide",
+              "type": "column",
+              "props": {
+                "span": 12,
+                "part": "slide",
+                "repeat": "slides"
+              },
+              "children": [
+                {
+                  "id": "hero-image",
+                  "type": "image",
+                  "props": {
+                    "image": "{{image}}",
+                    "url": "{{url}}"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "hero-dots",
+              "type": "column",
+              "props": {
+                "span": 12,
+                "part": "dots"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
