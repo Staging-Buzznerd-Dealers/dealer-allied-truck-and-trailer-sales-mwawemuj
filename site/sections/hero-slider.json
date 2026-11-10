@@ -2,7 +2,7 @@
   "version": 2,
   "id": "hero-slider",
   "name": "Hero image slider",
-  "css": "[data-bz-node=\"hero-slides\"]{position:relative;min-height:calc(730 * var(--u));background:#e9e6df;gap:0}\n[data-bz-node=\"hero-slides\"] img{display:block;width:100%;height:calc(730 * var(--u));object-fit:cover}\n[data-bz-node=\"hero-slides\"] .bz-col,[data-bz-node=\"hero-slides\"] .bz-block{margin:0;padding:0}\n[data-bz-node=\"hero-dots\"]{position:absolute;left:0;right:0;bottom:calc(18 * var(--u));display:flex;justify-content:center;gap:10px;z-index:2}\n[data-bz-node=\"hero-dots\"] .bz-dot{width:14px;height:14px;border-radius:50%;border:2px solid #fff;background:transparent;padding:0;cursor:pointer}\n[data-bz-node=\"hero-dots\"] .bz-dot[aria-current=\"true\"]{background:#fff}\n",
+  "css": "[data-bz-node=\"hero-slides\"]{position:relative;min-height:calc(730 * var(--u));background:#e9e6df;gap:0}\n[data-bz-node=\"hero-slides\"] img{display:block;width:100%;height:calc(730 * var(--u));object-fit:cover}\n[data-bz-node=\"hero-slides\"] .bz-col,[data-bz-node=\"hero-slides\"] .bz-block{margin:0;padding:0}\n[data-bz-node=\"hero-dots\"]{position:absolute;left:0;right:0;bottom:calc(18 * var(--u));display:flex;justify-content:center;gap:10px;z-index:2}\n[data-bz-node=\"hero-dots\"] .bz-dot{width:14px;height:14px;border-radius:50%;border:2px solid #fff;background:transparent;padding:0;cursor:pointer}\n[data-bz-node=\"hero-dots\"] .bz-dot[aria-current=\"true\"]{background:#fff}\n@keyframes hero-fade{from{opacity:0}to{opacity:1}}\n[data-bz-part=\"slide\"]:not([hidden]){animation:hero-fade .9s ease}\n@media (prefers-reduced-motion:reduce){[data-bz-part=\"slide\"]:not([hidden]){animation:none}}\n",
   "js": "",
   "props": [
     {

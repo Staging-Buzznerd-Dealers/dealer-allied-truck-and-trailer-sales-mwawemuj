@@ -7,7 +7,74 @@
       "props": {
         "sectionId": "hero-slider",
         "values": {
-          "slides": []
+          "slides": [
+            {
+              "image": {
+                "src": "https://www.alliedtruckandtrailersales.com/siteart/images/1.jpg",
+                "alt": "Allied Truck & Trailer Sales \u2014 photo 1"
+              }
+            },
+            {
+              "image": {
+                "src": "https://www.alliedtruckandtrailersales.com/siteart/images/2.jpg",
+                "alt": "Allied Truck & Trailer Sales \u2014 photo 2"
+              }
+            },
+            {
+              "image": {
+                "src": "https://www.alliedtruckandtrailersales.com/siteart/images/3.jpg",
+                "alt": "Allied Truck & Trailer Sales \u2014 photo 3"
+              }
+            },
+            {
+              "image": {
+                "src": "https://www.alliedtruckandtrailersales.com/siteart/images/4.jpg",
+                "alt": "Allied Truck & Trailer Sales \u2014 photo 4"
+              }
+            },
+            {
+              "image": {
+                "src": "https://www.alliedtruckandtrailersales.com/siteart/images/5.jpg",
+                "alt": "Allied Truck & Trailer Sales \u2014 photo 5"
+              }
+            },
+            {
+              "image": {
+                "src": "https://www.alliedtruckandtrailersales.com/siteart/images/6.jpg",
+                "alt": "Allied Truck & Trailer Sales \u2014 photo 6"
+              }
+            },
+            {
+              "image": {
+                "src": "https://www.alliedtruckandtrailersales.com/siteart/images/7.jpg",
+                "alt": "Allied Truck & Trailer Sales \u2014 photo 7"
+              }
+            },
+            {
+              "image": {
+                "src": "https://www.alliedtruckandtrailersales.com/siteart/images/8.jpg",
+                "alt": "Allied Truck & Trailer Sales \u2014 photo 8"
+              }
+            },
+            {
+              "image": {
+                "src": "https://www.alliedtruckandtrailersales.com/siteart/images/9.jpg",
+                "alt": "Allied Truck & Trailer Sales \u2014 photo 9"
+              }
+            },
+            {
+              "image": {
+                "src": "https://www.alliedtruckandtrailersales.com/siteart/images/10.jpg",
+                "alt": "Allied Truck & Trailer Sales \u2014 photo 10"
+              }
+            },
+            {
+              "image": {
+                "src": "https://www.alliedtruckandtrailersales.com/siteart/images/12.jpg",
+                "alt": "Allied Truck & Trailer Sales \u2014 photo 11"
+              }
+            }
+          ]
         }
       }
     },
