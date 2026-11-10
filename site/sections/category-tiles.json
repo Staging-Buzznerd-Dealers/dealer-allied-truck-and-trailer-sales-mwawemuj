@@ -2,7 +2,7 @@
   "version": 2,
   "id": "category-tiles",
   "name": "Category photo tiles",
-  "css": "[data-bz-node=\"tiles\"]{padding:0 calc(29 * var(--u));height:calc(295 * var(--u));overflow:hidden}\n[data-bz-node=\"tiles-row\"]{gap:5px}\n[data-bz-node=\"tiles\"] img{display:block;width:100%;height:calc(295 * var(--u));object-fit:cover;border-radius:0}\n[data-bz-node=\"tiles\"] .bz-block,[data-bz-node=\"tiles\"] figure{margin:0}\n",
+  "css": "[data-bz-node=\"tiles\"]{padding:0 calc(29 * var(--u));height:calc(295 * var(--u));overflow:hidden}\n[data-bz-node=\"tiles-row\"]{gap:5px}\n[data-bz-node=\"tiles\"] img{display:block;width:100%;height:calc(295 * var(--u));object-fit:cover;border-radius:0}\n[data-bz-node=\"tiles\"] .bz-block,[data-bz-node=\"tiles\"] figure{margin:0}\n[data-bz-node=\"tiles\"] img{transition:filter .35s ease}\n[data-bz-node=\"tiles\"] a:hover img,[data-bz-node=\"tiles\"] a:focus-visible img{filter:brightness(1.75) saturate(1.1)}\n@media (prefers-reduced-motion:reduce){[data-bz-node=\"tiles\"] img{transition:none}}\n",
   "js": "document.querySelectorAll('[data-bz-node=\"tiles\"] a[href]').forEach(function (a) {\n  a.target = '_blank';\n  a.rel = 'noopener';\n});",
   "props": [
     {
