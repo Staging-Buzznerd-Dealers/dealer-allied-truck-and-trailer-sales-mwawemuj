@@ -1,48 +1,38 @@
 [
   {
     "id": "browse-inventory",
-    "label": "Browse inventory",
-    "url": "/store",
+    "label": "Browse rental inventory",
+    "url": "/store/inventory?condition=rental",
     "style": "primary",
     "intent": "browse-inventory",
     "newTab": false,
     "active": true
   },
   {
-    "id": "request-quote",
-    "label": "Request a quote",
+    "id": "request-rental",
+    "label": "Request a rental",
     "url": null,
-    "formId": "request-a-quote",
+    "formId": "rental-request",
     "style": "primary",
-    "intent": "get-quote",
-    "newTab": false,
-    "active": true
-  },
-  {
-    "id": "book-service",
-    "label": "Book service",
-    "url": null,
-    "formId": "request-info",
-    "style": "secondary",
-    "intent": "book-service",
+    "intent": "rental-request",
     "newTab": false,
     "active": true
   },
   {
     "id": "call-us",
-    "label": "Call us",
-    "url": "tel:+15551234567",
+    "label": "Call (336) 552-7401",
+    "url": "tel:+13365527401",
     "style": "secondary",
     "intent": "call-dealer",
     "newTab": false,
     "active": true
   },
   {
-    "id": "about-us",
-    "label": "About us",
-    "url": "/about",
-    "style": "link",
-    "intent": "about",
+    "id": "sell-my-truck",
+    "label": "Sell my truck",
+    "url": "https://www.alliedtruckandtrailersales.com/sell-my-truck",
+    "style": "primary",
+    "intent": "sell-my-truck",
     "newTab": false,
     "active": true
   }

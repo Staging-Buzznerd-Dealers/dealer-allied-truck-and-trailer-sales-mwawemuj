@@ -1,8 +1,8 @@
 [
   {
     "slug": "home",
-    "title": "Home",
-    "description": "New and used trucks, service and parts from a dealer you can trust.",
+    "title": "Rental Inventory",
+    "description": "Rental trucks, trailers and machinery from Allied Truck & Trailer Sales in Madison, NC.",
     "path": "/",
     "out": "index.html",
     "dir": "home",

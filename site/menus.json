@@ -5,36 +5,48 @@
       "id": "main",
       "name": "Main menu",
       "items": [
-        { "id": "home", "label": "Home", "type": "page", "ref": "home" },
-        { "id": "inventory", "label": "Inventory", "type": "inventory", "ref": "inventory" },
+        {
+          "id": "trucks",
+          "label": "Trucks",
+          "type": "url",
+          "url": "https://www.alliedtruckandtrailersales.com/trucks"
+        },
+        {
+          "id": "trailers",
+          "label": "Trailers",
+          "type": "url",
+          "url": "https://www.alliedtruckandtrailersales.com/trailers"
+        },
+        {
+          "id": "machinery",
+          "label": "Machinery",
+          "type": "url",
+          "url": "https://www.alliedtruckandtrailersales.com/machinery"
+        },
+        {
+          "id": "sell",
+          "label": "Sell my truck",
+          "type": "url",
+          "url": "https://www.alliedtruckandtrailersales.com/sell-my-truck"
+        },
+        {
+          "id": "finance",
+          "label": "Finance",
+          "type": "url",
+          "url": "https://www.alliedtruckandtrailersales.com/finance"
+        },
+        {
+          "id": "contact",
+          "label": "Contact",
+          "type": "url",
+          "url": "https://www.alliedtruckandtrailersales.com/contact"
+        },
         {
           "id": "about",
           "label": "About",
           "type": "url",
-          "url": "/about",
-          "children": [
-            { "id": "about-team", "label": "Our team", "type": "url", "url": "/about#team" },
-            { "id": "about-history", "label": "History", "type": "url", "url": "/about#history" }
-          ]
-        },
-        { "id": "contact", "label": "Contact", "type": "url", "url": "/contact" }
-      ]
-    },
-    {
-      "id": "footer",
-      "name": "Footer menu",
-      "items": [
-        { "id": "f-inventory", "label": "Inventory", "type": "inventory", "ref": "inventory" },
-        { "id": "f-about", "label": "About", "type": "url", "url": "/about" },
-        { "id": "f-contact", "label": "Contact", "type": "url", "url": "/contact" }
-      ]
-    },
-    {
-      "id": "legal",
-      "name": "Legal",
-      "items": [
-        { "id": "privacy", "label": "Privacy", "type": "url", "url": "/privacy" },
-        { "id": "terms", "label": "Terms", "type": "url", "url": "/terms" }
+          "url": "https://www.alliedtruckandtrailersales.com/about"
+        }
       ]
     }
   ]

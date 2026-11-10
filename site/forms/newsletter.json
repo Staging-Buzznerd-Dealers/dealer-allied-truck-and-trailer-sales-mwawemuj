@@ -1,0 +1,35 @@
+{
+  "id": "newsletter",
+  "name": "Newsletter signup",
+  "status": "live",
+  "surfaces": [
+    "page"
+  ],
+  "intent": "newsletter-signup",
+  "submitLabel": "Subscribe",
+  "successMessage": "Thanks \u2014 you're on the list.",
+  "consent": {
+    "enabled": true,
+    "required": true,
+    "text": "I agree to receive emails from Allied Truck & Trailer Sales."
+  },
+  "fields": [
+    {
+      "id": "nl-email",
+      "type": "email",
+      "label": "Email",
+      "required": true
+    }
+  ],
+  "notifications": [
+    {
+      "id": "nl-default",
+      "name": "Default",
+      "logic": "AND",
+      "rules": [],
+      "targetType": "role",
+      "roleId": "marketing-manager",
+      "scopeMode": "dynamic"
+    }
+  ]
+}

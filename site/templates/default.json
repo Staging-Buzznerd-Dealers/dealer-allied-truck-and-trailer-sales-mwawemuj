@@ -2,45 +2,126 @@
   "version": 2,
   "id": "default",
   "name": "Site template",
-  "conditions": [{ "type": "entireSite", "ref": null }],
+  "conditions": [
+    {
+      "type": "entireSite",
+      "ref": null
+    }
+  ],
+  "css": "[data-bz-section=\"header\"]{background:url(/camo.jpg) center/cover;border-bottom:8px solid #8b0000;color:#1a1a6e}\n[data-bz-node=\"hc-addr\"],[data-bz-node=\"hc-people\"]{background:#c4a76c;padding:18px 22px;font-size:14px;font-weight:700;text-transform:uppercase}\n[data-bz-node=\"header-contact\"]{gap:0}\n[data-bz-node=\"header-nav-row\"] a{color:#8b0000;font-family:'Playfair Display',serif;font-weight:800;text-transform:uppercase}\n[data-bz-section=\"header\"] a{color:#1a1a1a}\n[data-bz-node=\"header-nav-row\"] a{color:#8b0000}\n[data-bz-section=\"footer\"] h2{color:#1a1a6e;font-family:'Playfair Display',serif;text-transform:uppercase;letter-spacing:.08em;color:#1a1a6e;border-bottom:4px solid #8b0000;padding-bottom:12px}\n[data-bz-node=\"news-h\"] h2,[data-bz-node=\"news-h\"]{background:#8b0000;color:#fff;border-radius:12px;border:0}\n[data-bz-node=\"news-h\"] h2{color:#fff;border:0}\n[data-bz-node=\"sell-btn\"] .bz-btn{width:100%;background:#8b0000;border-radius:12px;font-family:'Playfair Display',serif;font-size:32px;text-transform:uppercase}\n",
   "nodes": [
     {
       "id": "header",
       "type": "section",
-      "props": { "width": "boxed", "paddingY": 3, "background": "card" },
+      "props": {
+        "width": "full",
+        "paddingY": 0
+      },
       "children": [
         {
-          "id": "header-row",
+          "id": "header-top",
           "type": "row",
-          "props": { "gap": 5, "align": "center", "stackOn": "mobile" },
+          "props": {
+            "gap": 5,
+            "align": "center",
+            "stackOn": "mobile"
+          },
           "children": [
             {
               "id": "header-brand",
               "type": "column",
-              "props": { "span": 3, "align": "center" },
-              "children": [{ "id": "logo", "type": "logo", "props": { "url": "/", "height": 34 } }]
-            },
-            {
-              "id": "header-nav",
-              "type": "column",
-              "props": { "span": 6, "align": "center" },
+              "props": {
+                "span": 3
+              },
               "children": [
                 {
-                  "id": "main-nav",
-                  "type": "menu",
-                  "props": { "menuId": "main", "layout": "horizontal", "align": "center", "collapseOnMobile": true }
+                  "id": "logo",
+                  "type": "logo",
+                  "props": {
+                    "url": "/",
+                    "height": 120
+                  }
                 }
               ]
             },
             {
-              "id": "header-cta",
+              "id": "header-info",
               "type": "column",
-              "props": { "span": 3, "align": "center" },
+              "props": {
+                "span": 9,
+                "align": "end"
+              },
               "children": [
                 {
-                  "id": "header-button",
-                  "type": "buttons",
-                  "props": { "items": [{ "ctaId": "browse-inventory" }], "align": "left" }
+                  "id": "header-contact",
+                  "type": "row",
+                  "props": {
+                    "gap": 5,
+                    "stackOn": "mobile"
+                  },
+                  "children": [
+                    {
+                      "id": "hc-addr",
+                      "type": "column",
+                      "props": {
+                        "span": 5
+                      },
+                      "children": [
+                        {
+                          "id": "hc-addr-t",
+                          "type": "text",
+                          "props": {
+                            "text": "2804 US Highway 220\n\nMadison, NC 27025",
+                            "align": "center"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "hc-people",
+                      "type": "column",
+                      "props": {
+                        "span": 7
+                      },
+                      "children": [
+                        {
+                          "id": "hc-people-t",
+                          "type": "text",
+                          "props": {
+                            "text": "Jeff Sellers <a href=\"tel:+13365527401\">(336) 552-7401</a>\n\nJimmy Grefenstette <a href=\"tel:+13365203080\">(336) 520-3080</a>\n\n<a href=\"mailto:jfsellers21@hotmail.com\">jfsellers21@hotmail.com</a>"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "header-nav-row",
+          "type": "row",
+          "props": {
+            "gap": 0
+          },
+          "children": [
+            {
+              "id": "header-nav",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "main-nav",
+                  "type": "menu",
+                  "props": {
+                    "menuId": "main",
+                    "layout": "horizontal",
+                    "align": "center",
+                    "collapseOnMobile": true
+                  }
                 }
               ]
             }
@@ -48,37 +129,162 @@
         }
       ]
     },
-    { "id": "content", "type": "contentArea", "props": { "label": "Page content" } },
+    {
+      "id": "content",
+      "type": "contentArea",
+      "props": {
+        "label": "Page content"
+      }
+    },
     {
       "id": "footer",
       "type": "section",
-      "props": { "width": "boxed", "paddingY": 7, "background": "ink" },
+      "props": {
+        "width": "wide",
+        "paddingY": 6
+      },
       "children": [
         {
-          "id": "footer-row",
+          "id": "sell-row",
           "type": "row",
-          "props": { "gap": 6, "align": "start" },
+          "props": {},
           "children": [
             {
-              "id": "footer-brand",
+              "id": "sell-col",
               "type": "column",
-              "props": { "span": 4 },
-              "children": [{ "id": "footer-logo", "type": "logo", "props": { "url": "/", "height": 28 } }]
-            },
-            {
-              "id": "footer-links",
-              "type": "column",
-              "props": { "span": 4 },
+              "props": {
+                "span": 12
+              },
               "children": [
-                { "id": "footer-nav", "type": "menu", "props": { "menuId": "footer", "layout": "vertical" } }
+                {
+                  "id": "sell-btn",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "sell-my-truck"
+                      }
+                    ],
+                    "align": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "info-row",
+          "type": "row",
+          "props": {
+            "gap": 6,
+            "stackOn": "mobile"
+          },
+          "children": [
+            {
+              "id": "hours-col",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "hours-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "\u2605  Hours  \u2605",
+                    "headingLevel": 2,
+                    "align": "center"
+                  }
+                },
+                {
+                  "id": "hours-t",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>Monday \u2013 Friday</strong>\n8am \u2013 5pm\n\n<strong>Weekends</strong>\nBy appointment",
+                    "align": "center"
+                  }
+                }
               ]
             },
             {
-              "id": "footer-legal",
+              "id": "contact-col",
               "type": "column",
-              "props": { "span": 4 },
+              "props": {
+                "span": 6
+              },
               "children": [
-                { "id": "legal-nav", "type": "menu", "props": { "menuId": "legal", "layout": "vertical" } }
+                {
+                  "id": "contact-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "\u2605  Contact Us  \u2605",
+                    "headingLevel": 2,
+                    "align": "center"
+                  }
+                },
+                {
+                  "id": "contact-t",
+                  "type": "text",
+                  "props": {
+                    "text": "<strong>Jeff Sellers</strong>\n<a href=\"tel:+13365527401\">(336) 552\u20137401</a>\n\n<strong>Email us today</strong>\n<a href=\"mailto:jfsellers21@hotmail.com\">jfsellers21@hotmail.com</a>",
+                    "align": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "news-row",
+          "type": "row",
+          "props": {},
+          "children": [
+            {
+              "id": "news-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "news-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Join our newsletter",
+                    "headingLevel": 2,
+                    "align": "center"
+                  }
+                },
+                {
+                  "id": "news-form",
+                  "type": "form",
+                  "props": {
+                    "formId": "newsletter"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "map-row",
+          "type": "row",
+          "props": {},
+          "children": [
+            {
+              "id": "map-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "map",
+                  "type": "widget",
+                  "props": {
+                    "widget": "locations-map"
+                  }
+                }
               ]
             }
           ]
