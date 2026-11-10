@@ -2,155 +2,52 @@
   "version": 2,
   "nodes": [
     {
-      "id": "rentals",
-      "type": "section",
+      "id": "hero-slider",
+      "type": "sharedSection",
       "props": {
-        "width": "boxed",
-        "paddingY": 7
-      },
-      "children": [
-        {
-          "id": "rentals-row",
-          "type": "row",
-          "props": {},
-          "children": [
-            {
-              "id": "rentals-col",
-              "type": "column",
-              "props": {
-                "span": 12
-              },
-              "children": [
-                {
-                  "id": "intro-h",
-                  "type": "heading",
-                  "props": {
-                    "text": "Rental Inventory",
-                    "headingLevel": 1,
-                    "align": "center"
-                  }
-                },
-                {
-                  "id": "intro-cta",
-                  "type": "buttons",
-                  "props": {
-                    "items": [
-                      {
-                        "ctaId": "browse-inventory"
-                      },
-                      {
-                        "ctaId": "call-us"
-                      }
-                    ],
-                    "align": "center"
-                  }
-                },
-                {
-                  "id": "rentals-w",
-                  "type": "widget",
-                  "props": {
-                    "widget": "inventory-carousel",
-                    "config": {
-                      "heading": "Available for rent"
-                    }
-                  }
-                }
-              ]
-            }
-          ]
+        "sectionId": "hero-slider",
+        "values": {
+          "slides": []
         }
-      ]
+      }
     },
     {
-      "id": "tiles",
-      "type": "section",
+      "id": "category-tiles",
+      "type": "sharedSection",
       "props": {
-        "width": "full",
-        "paddingY": 0
-      },
-      "children": [
-        {
-          "id": "tiles-row",
-          "type": "row",
-          "props": {
-            "gap": 0
-          },
-          "children": [
+        "sectionId": "category-tiles",
+        "values": {
+          "tiles": [
             {
-              "id": "tile-trucks",
-              "type": "column",
-              "props": {
-                "span": 4
+              "image": {
+                "src": "/tile-trucks.jpg",
+                "alt": "Trucks",
+                "width": 555,
+                "height": 295
               },
-              "children": [
-                {
-                  "id": "tile-trucks-img",
-                  "type": "image",
-                  "props": {
-                    "image": {
-                      "src": "/tile-trucks.jpg",
-                      "alt": "Trucks",
-                      "width": 555,
-                      "height": 295
-                    },
-                    "link": {
-                      "url": "https://www.alliedtruckandtrailersales.com/trucks"
-                    }
-                  }
-                }
-              ]
+              "url": "https://www.alliedtruckandtrailersales.com/inventory/?/listings/for-sale/trucks/27?DSCompanyID=9552&settingsCRMID=359447"
             },
             {
-              "id": "tile-trailers",
-              "type": "column",
-              "props": {
-                "span": 4
+              "image": {
+                "src": "/tile-trailers.jpg",
+                "alt": "Trailers",
+                "width": 555,
+                "height": 295
               },
-              "children": [
-                {
-                  "id": "tile-trailers-img",
-                  "type": "image",
-                  "props": {
-                    "image": {
-                      "src": "/tile-trailers.jpg",
-                      "alt": "Trailers",
-                      "width": 555,
-                      "height": 295
-                    },
-                    "link": {
-                      "url": "https://www.alliedtruckandtrailersales.com/trailers"
-                    }
-                  }
-                }
-              ]
+              "url": "https://www.alliedtruckandtrailersales.com/inventory/?/listings/for-sale/trailers/28?DSCompanyID=9552&settingsCRMID=359447"
             },
             {
-              "id": "tile-machinery",
-              "type": "column",
-              "props": {
-                "span": 4
+              "image": {
+                "src": "/tile-machinery.jpg",
+                "alt": "Lifts & Machinery",
+                "width": 555,
+                "height": 295
               },
-              "children": [
-                {
-                  "id": "tile-machinery-img",
-                  "type": "image",
-                  "props": {
-                    "image": {
-                      "src": "/tile-machinery.jpg",
-                      "alt": "Lifts & Machinery",
-                      "width": 555,
-                      "height": 295
-                    },
-                    "link": {
-                      "url": "https://www.alliedtruckandtrailersales.com/machinery"
-                    }
-                  }
-                }
-              ]
+              "url": "https://www.alliedtruckandtrailersales.com/inventory/?/listings/for-sale/construction-equipment/4?DSCompanyID=9552&settingsCRMID=359447"
             }
           ]
         }
-      ]
+      }
     }
   ]
 }

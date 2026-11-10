@@ -1,0 +1,65 @@
+{
+  "version": 2,
+  "id": "category-tiles",
+  "name": "Category photo tiles",
+  "css": "[data-bz-node=\"tiles\"]{padding:0 calc(29 * var(--u));height:calc(295 * var(--u));overflow:hidden}\n[data-bz-node=\"tiles-row\"]{gap:5px}\n[data-bz-node=\"tiles\"] img{display:block;width:100%;height:calc(295 * var(--u));object-fit:cover;border-radius:0}\n[data-bz-node=\"tiles\"] .bz-block,[data-bz-node=\"tiles\"] figure{margin:0}\n",
+  "js": "document.querySelectorAll('[data-bz-node=\"tiles\"] a[href]').forEach(function (a) {\n  a.target = '_blank';\n  a.rel = 'noopener';\n});",
+  "props": [
+    {
+      "key": "tiles",
+      "type": "list",
+      "label": "Tiles",
+      "fields": [
+        {
+          "key": "image",
+          "type": "image",
+          "label": "Photo"
+        },
+        {
+          "key": "url",
+          "type": "url",
+          "label": "Links to"
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "tiles",
+      "type": "section",
+      "props": {
+        "width": "full",
+        "paddingY": 0
+      },
+      "children": [
+        {
+          "id": "tiles-row",
+          "type": "row",
+          "props": {
+            "gap": 0
+          },
+          "children": [
+            {
+              "id": "tile",
+              "type": "column",
+              "props": {
+                "span": 4,
+                "repeat": "tiles"
+              },
+              "children": [
+                {
+                  "id": "tile-img",
+                  "type": "image",
+                  "props": {
+                    "image": "{{image}}",
+                    "url": "{{url}}"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

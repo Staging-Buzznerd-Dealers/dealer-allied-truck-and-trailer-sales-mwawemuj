@@ -30,10 +30,19 @@
   {
     "id": "sell-my-truck",
     "label": "Sell my truck",
-    "url": "https://www.alliedtruckandtrailersales.com/sell-my-truck",
+    "url": "https://www.alliedtruckandtrailersales.com/sell.htm",
     "style": "primary",
     "intent": "sell-my-truck",
-    "newTab": false,
+    "newTab": true,
+    "active": true
+  },
+  {
+    "id": "join-newsletter",
+    "label": "Join our newsletter",
+    "url": "https://www.alliedtruckandtrailersales.com/newsletter.htm",
+    "style": "primary",
+    "intent": "newsletter-signup",
+    "newTab": true,
     "active": true
   }
 ]
