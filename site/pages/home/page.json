@@ -48,66 +48,6 @@
           ]
         }
       }
-    },
-    {
-      "id": "rentals",
-      "type": "section",
-      "props": {
-        "width": "boxed",
-        "paddingY": 7
-      },
-      "children": [
-        {
-          "id": "rentals-row",
-          "type": "row",
-          "props": {},
-          "children": [
-            {
-              "id": "rentals-col",
-              "type": "column",
-              "props": {
-                "span": 12
-              },
-              "children": [
-                {
-                  "id": "intro-h",
-                  "type": "heading",
-                  "props": {
-                    "text": "Rental Inventory",
-                    "headingLevel": 1,
-                    "align": "center"
-                  }
-                },
-                {
-                  "id": "intro-cta",
-                  "type": "buttons",
-                  "props": {
-                    "items": [
-                      {
-                        "ctaId": "browse-inventory"
-                      },
-                      {
-                        "ctaId": "call-us"
-                      }
-                    ],
-                    "align": "center"
-                  }
-                },
-                {
-                  "id": "rentals-w",
-                  "type": "widget",
-                  "props": {
-                    "widget": "inventory-carousel",
-                    "config": {
-                      "heading": "Available for rent"
-                    }
-                  }
-                }
-              ]
-            }
-          ]
-        }
-      ]
     }
   ]
 }
