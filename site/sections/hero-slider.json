@@ -1,9 +1,9 @@
 {
   "version": 2,
   "id": "hero-slider",
-  "name": "Hero image slider",
-  "css": "[data-bz-node=\"hero-slides\"]{position:relative;min-height:calc(730 * var(--u));background:#e9e6df;gap:0}\n[data-bz-node=\"hero-slides\"] img{display:block;width:100%;height:calc(730 * var(--u));object-fit:cover}\n[data-bz-node=\"hero-slides\"] .bz-col,[data-bz-node=\"hero-slides\"] .bz-block{margin:0;padding:0}\n[data-bz-node=\"hero-dots\"]{position:absolute;left:0;right:0;bottom:calc(18 * var(--u));display:flex;justify-content:center;gap:10px;z-index:2}\n[data-bz-node=\"hero-dots\"] .bz-dot{width:14px;height:14px;border-radius:50%;border:2px solid #fff;background:transparent;padding:0;cursor:pointer}\n[data-bz-node=\"hero-dots\"] .bz-dot[aria-current=\"true\"]{background:#fff}\n",
-  "js": "",
+  "name": "Hero image slideshow",
+  "css": "[data-bz-node=\"hero-slides\"]{position:relative;min-height:calc(730 * var(--u));background:#111;gap:0;overflow:hidden}\n[data-bz-node=\"hero-slides\"] [data-bz-part=\"slide\"]{background-size:cover;background-position:center;background-color:#111}\n[data-bz-node=\"hero-slides\"] .bz-col,[data-bz-node=\"hero-slides\"] .bz-block{margin:0;padding:0}\n[data-bz-node=\"hero-slides\"] img{display:block;width:100%;height:calc(730 * var(--u));object-fit:contain}\n/* Before the script runs (and in the Design canvas) only the first image shows, in flow. */\n[data-bz-node=\"hero-slides\"]:not(.is-staged) [data-bz-part=\"slide\"]:not(:first-child){display:none}\n/* Staged: every image stacked, each cross-fading on its own delay, like the live site. */\n[data-bz-node=\"hero-slides\"].is-staged [data-bz-part=\"slide\"]{position:absolute;inset:0;opacity:0;animation:hero-fade var(--hero-total) linear infinite both}\n[data-bz-node=\"hero-slides\"].is-staged [data-bz-part=\"slide\"] img{height:100%}\n[data-bz-node=\"hero-slides\"] .bz-block,[data-bz-node=\"hero-slides\"] .bz-container,[data-bz-node=\"hero-slides\"] .bz-figure{display:block;width:100%;max-width:none;height:calc(730 * var(--u));margin:0;padding:0}\n[data-bz-node=\"hero-slides\"].is-staged .bz-block,[data-bz-node=\"hero-slides\"].is-staged .bz-container,[data-bz-node=\"hero-slides\"].is-staged .bz-figure{height:100%}\n",
+  "js": "(function () {\n  document.querySelectorAll('[data-bz-node=\"hero-slides\"]').forEach(function (row) {\n    var slides = row.querySelectorAll('[data-bz-part=\"slide\"]');\n    var n = slides.length;\n    // Dark, enlarged copy of each photo fills the sides the photo itself does not reach.\n    slides.forEach(function (slide) {\n      var img = slide.querySelector('img');\n      if (!img) return;\n      var src = img.currentSrc || img.getAttribute('src');\n      slide.style.backgroundImage = 'linear-gradient(rgba(0,0,0,.68),rgba(0,0,0,.68)), url(\"' + src + '\")';\n    });\n    if (n < 2) return;\n    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;\n    var hold = 5, fade = 1.4, total = n * hold;\n    function p(s) { return (s / total * 100).toFixed(3) + '%'; }\n    var style = document.createElement('style');\n    style.textContent = '@keyframes hero-fade{0%{opacity:0}' + p(fade) + '{opacity:1}' + p(hold) +\n      '{opacity:1}' + p(hold + fade) + '{opacity:0}100%{opacity:0}}';\n    document.head.appendChild(style);\n    row.style.setProperty('--hero-total', total + 's');\n    slides.forEach(function (slide, i) { slide.style.animationDelay = (i * hold) + 's'; });\n    row.classList.add('is-staged');\n  });\n})();",
   "props": [
     {
       "key": "slides",
@@ -21,12 +21,6 @@
           "label": "Links to (optional)"
         }
       ]
-    },
-    {
-      "key": "autoplay",
-      "type": "number",
-      "label": "Seconds between slides",
-      "default": 5
     }
   ],
   "nodes": [
@@ -42,9 +36,7 @@
           "id": "hero-slides",
           "type": "row",
           "props": {
-            "gap": 0,
-            "behaviour": "rotator",
-            "behaviourOptions": "{\"autoplay\":5000}"
+            "gap": 0
           },
           "children": [
             {
@@ -65,14 +57,6 @@
                   }
                 }
               ]
-            },
-            {
-              "id": "hero-dots",
-              "type": "column",
-              "props": {
-                "span": 12,
-                "part": "dots"
-              }
             }
           ]
         }

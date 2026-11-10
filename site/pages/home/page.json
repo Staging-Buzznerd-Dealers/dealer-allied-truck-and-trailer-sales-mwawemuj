@@ -7,7 +7,74 @@
       "props": {
         "sectionId": "hero-slider",
         "values": {
-          "slides": []
+          "slides": [
+            {
+              "image": {
+                "src": "https://www.alliedtruckandtrailersales.com/siteart/images/1.jpg",
+                "alt": "Purple Kenworth truck on lot"
+              }
+            },
+            {
+              "image": {
+                "src": "https://www.alliedtruckandtrailersales.com/siteart/images/2.jpg",
+                "alt": "Trailer sitting on lot"
+              }
+            },
+            {
+              "image": {
+                "src": "https://www.alliedtruckandtrailersales.com/siteart/images/3.jpg",
+                "alt": "Mack truck sitting on lot"
+              }
+            },
+            {
+              "image": {
+                "src": "https://www.alliedtruckandtrailersales.com/siteart/images/4.jpg",
+                "alt": "White Sterling truck sitting on lot"
+              }
+            },
+            {
+              "image": {
+                "src": "https://www.alliedtruckandtrailersales.com/siteart/images/5.jpg",
+                "alt": "Red forklifts sitting on lot"
+              }
+            },
+            {
+              "image": {
+                "src": "https://www.alliedtruckandtrailersales.com/siteart/images/6.jpg",
+                "alt": "White flatbed truck on lot"
+              }
+            },
+            {
+              "image": {
+                "src": "https://www.alliedtruckandtrailersales.com/siteart/images/7.jpg",
+                "alt": "Flatbed trailer sitting on lot"
+              }
+            },
+            {
+              "image": {
+                "src": "https://www.alliedtruckandtrailersales.com/siteart/images/8.jpg",
+                "alt": "Flatbed dump truck on lot"
+              }
+            },
+            {
+              "image": {
+                "src": "https://www.alliedtruckandtrailersales.com/siteart/images/9.jpg",
+                "alt": "Maroon Freightliner truck on lot"
+              }
+            },
+            {
+              "image": {
+                "src": "https://www.alliedtruckandtrailersales.com/siteart/images/10.jpg",
+                "alt": "White truck sitting on lot"
+              }
+            },
+            {
+              "image": {
+                "src": "https://www.alliedtruckandtrailersales.com/siteart/images/12.jpg",
+                "alt": "White flatbed Sterling truck on lot"
+              }
+            }
+          ]
         }
       }
     },
