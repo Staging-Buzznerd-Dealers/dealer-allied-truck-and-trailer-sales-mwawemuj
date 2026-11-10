@@ -35,5 +35,14 @@
     "intent": "sell-my-truck",
     "newTab": true,
     "active": true
+  },
+  {
+    "id": "join-newsletter",
+    "label": "Join our newsletter",
+    "url": "https://www.alliedtruckandtrailersales.com/newsletter.htm",
+    "style": "primary",
+    "intent": "newsletter-signup",
+    "newTab": true,
+    "active": true
   }
 ]
