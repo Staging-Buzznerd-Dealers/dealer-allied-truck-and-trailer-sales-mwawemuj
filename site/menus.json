@@ -33,7 +33,7 @@
           "id": "sell",
           "label": "Sell my truck",
           "type": "url",
-          "url": "https://www.alliedtruckandtrailersales.com/sell-my-truck"
+          "url": "https://www.alliedtruckandtrailersales.com/sell.htm"
         },
         {
           "id": "finance",
@@ -51,7 +51,7 @@
           "id": "about",
           "label": "About",
           "type": "url",
-          "url": "https://www.alliedtruckandtrailersales.com/about"
+          "url": "https://www.alliedtruckandtrailersales.com/about.htm"
         }
       ]
     }
