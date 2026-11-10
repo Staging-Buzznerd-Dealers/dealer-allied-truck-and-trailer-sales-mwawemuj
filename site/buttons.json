@@ -33,7 +33,7 @@
     "url": "https://www.alliedtruckandtrailersales.com/sell.htm",
     "style": "primary",
     "intent": "sell-my-truck",
-    "newTab": false,
+    "newTab": true,
     "active": true
   }
 ]

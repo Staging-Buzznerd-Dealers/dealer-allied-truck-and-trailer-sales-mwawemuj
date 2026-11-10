@@ -3,7 +3,7 @@
   "id": "category-tiles",
   "name": "Category photo tiles",
   "css": "[data-bz-node=\"tiles\"]{padding:0 calc(29 * var(--u));height:calc(295 * var(--u));overflow:hidden}\n[data-bz-node=\"tiles-row\"]{gap:5px}\n[data-bz-node=\"tiles\"] img{display:block;width:100%;height:calc(295 * var(--u));object-fit:cover;border-radius:0}\n[data-bz-node=\"tiles\"] .bz-block,[data-bz-node=\"tiles\"] figure{margin:0}\n",
-  "js": "",
+  "js": "document.querySelectorAll('[data-bz-node=\"tiles\"] a[href]').forEach(function (a) {\n  a.target = '_blank';\n  a.rel = 'noopener';\n});",
   "props": [
     {
       "key": "tiles",
