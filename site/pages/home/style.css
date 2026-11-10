@@ -1,0 +1,6 @@
+[data-bz-node="rentals"]{min-height:730px;box-sizing:border-box}
+[data-bz-node="tiles"]{padding:0 29px}
+[data-bz-node="tiles-row"]{gap:5px}
+[data-bz-node="tiles"] img{display:block;width:100%;height:295px;object-fit:cover;border-radius:0}
+[data-bz-node="tiles"] .bz-block,[data-bz-node="tiles"] figure{margin:0}
+[data-bz-node="tiles"]{height:295px;overflow:hidden}

@@ -2,64 +2,6 @@
   "version": 2,
   "nodes": [
     {
-      "id": "intro",
-      "type": "section",
-      "props": {
-        "width": "boxed",
-        "paddingY": 7
-      },
-      "children": [
-        {
-          "id": "intro-row",
-          "type": "row",
-          "props": {},
-          "children": [
-            {
-              "id": "intro-col",
-              "type": "column",
-              "props": {
-                "span": 12
-              },
-              "children": [
-                {
-                  "id": "intro-h",
-                  "type": "heading",
-                  "props": {
-                    "text": "Rental Inventory",
-                    "headingLevel": 1,
-                    "align": "center"
-                  }
-                },
-                {
-                  "id": "intro-t",
-                  "type": "text",
-                  "props": {
-                    "text": "Trucks, trailers and machinery available to rent from Allied Truck & Trailer Sales in Madison, NC.",
-                    "align": "center"
-                  }
-                },
-                {
-                  "id": "intro-cta",
-                  "type": "buttons",
-                  "props": {
-                    "items": [
-                      {
-                        "ctaId": "browse-inventory"
-                      },
-                      {
-                        "ctaId": "call-us"
-                      }
-                    ],
-                    "align": "center"
-                  }
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "id": "rentals",
       "type": "section",
       "props": {
@@ -80,12 +22,127 @@
               },
               "children": [
                 {
+                  "id": "intro-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Rental Inventory",
+                    "headingLevel": 1,
+                    "align": "center"
+                  }
+                },
+                {
+                  "id": "intro-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "browse-inventory"
+                      },
+                      {
+                        "ctaId": "call-us"
+                      }
+                    ],
+                    "align": "center"
+                  }
+                },
+                {
                   "id": "rentals-w",
                   "type": "widget",
                   "props": {
                     "widget": "inventory-carousel",
                     "config": {
                       "heading": "Available for rent"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tiles",
+      "type": "section",
+      "props": {
+        "width": "full",
+        "paddingY": 0
+      },
+      "children": [
+        {
+          "id": "tiles-row",
+          "type": "row",
+          "props": {
+            "gap": 0
+          },
+          "children": [
+            {
+              "id": "tile-trucks",
+              "type": "column",
+              "props": {
+                "span": 4
+              },
+              "children": [
+                {
+                  "id": "tile-trucks-img",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/tile-trucks.jpg",
+                      "alt": "Trucks",
+                      "width": 555,
+                      "height": 295
+                    },
+                    "link": {
+                      "url": "https://www.alliedtruckandtrailersales.com/trucks"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "tile-trailers",
+              "type": "column",
+              "props": {
+                "span": 4
+              },
+              "children": [
+                {
+                  "id": "tile-trailers-img",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/tile-trailers.jpg",
+                      "alt": "Trailers",
+                      "width": 555,
+                      "height": 295
+                    },
+                    "link": {
+                      "url": "https://www.alliedtruckandtrailersales.com/trailers"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "tile-machinery",
+              "type": "column",
+              "props": {
+                "span": 4
+              },
+              "children": [
+                {
+                  "id": "tile-machinery-img",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/tile-machinery.jpg",
+                      "alt": "Lifts & Machinery",
+                      "width": 555,
+                      "height": 295
+                    },
+                    "link": {
+                      "url": "https://www.alliedtruckandtrailersales.com/machinery"
                     }
                   }
                 }

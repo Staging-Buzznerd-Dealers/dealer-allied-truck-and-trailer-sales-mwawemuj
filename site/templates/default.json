@@ -8,7 +8,7 @@
       "ref": null
     }
   ],
-  "css": "[data-bz-section=\"header\"]{background:url(/camo.jpg) center/cover;border-bottom:8px solid #8b0000;color:#1a1a6e}\n[data-bz-node=\"hc-addr\"],[data-bz-node=\"hc-people\"]{background:#c4a76c;padding:18px 22px;font-size:14px;font-weight:700;text-transform:uppercase}\n[data-bz-node=\"header-contact\"]{gap:0}\n[data-bz-node=\"header-nav-row\"] a{color:#8b0000;font-family:'Playfair Display',serif;font-weight:800;text-transform:uppercase}\n[data-bz-section=\"header\"] a{color:#1a1a1a}\n[data-bz-node=\"header-nav-row\"] a{color:#8b0000}\n[data-bz-section=\"footer\"] h2{color:#1a1a6e;font-family:'Playfair Display',serif;text-transform:uppercase;letter-spacing:.08em;color:#1a1a6e;border-bottom:4px solid #8b0000;padding-bottom:12px}\n[data-bz-node=\"news-h\"] h2,[data-bz-node=\"news-h\"]{background:#8b0000;color:#fff;border-radius:12px;border:0}\n[data-bz-node=\"news-h\"] h2{color:#fff;border:0}\n[data-bz-node=\"sell-btn\"] .bz-btn{width:100%;background:#8b0000;border-radius:12px;font-family:'Playfair Display',serif;font-size:32px;text-transform:uppercase}\n",
+  "css": "\nbody{background:#fff;font-family:'Montserrat',sans-serif}\n[data-bz-node=\"header\"]{box-sizing:border-box;position:relative;background:url(/camo.jpg) center/cover;border-bottom:10px solid #8f9a96;min-height:272px;padding-bottom:0}\n[data-bz-node=\"header\"] .bz-brand{display:block}\n[data-bz-node=\"header\"] .bz-logo__img{height:170px;width:170px;border-radius:50%}\n[data-bz-node=\"hc-addr\"],[data-bz-node=\"hc-people\"]{background:#c4a76c;padding:14px 0 0;height:107px;box-sizing:border-box;overflow:hidden}\n[data-bz-node=\"hc-addr\"]{padding-left:16px;text-align:center}\n[data-bz-node=\"hc-addr-t\"] p,[data-bz-node=\"hc-people-t\"] p{margin:0 0 5px;line-height:25px}\n[data-bz-node=\"hc-addr-t\"] p{font:700 16px 'Playfair Display',serif;letter-spacing:.08em;text-transform:uppercase;color:#1a1a1a;text-align:center}\n[data-bz-node=\"hc-people-t\"] p{font:700 16px 'Montserrat',sans-serif;text-transform:uppercase;color:#1a1a1a}\n[data-bz-node=\"hc-people-t\"] a{color:#1a1a1a;text-decoration:underline}\n[data-bz-node=\"main-nav\"] .bz-nav{display:grid;grid-template-columns:repeat(7,1fr);gap:0;width:100%}\n[data-bz-node=\"main-nav\"] .bz-navitem{text-align:center;border-left:2px solid #b0102a;line-height:44px}\n[data-bz-node=\"main-nav\"] .bz-navitem:first-child{border-left:0}\n[data-bz-node=\"main-nav\"] .bz-navitem>a{font:800 22px 'Playfair Display',serif;color:#b0102a;text-transform:uppercase;line-height:44px}\n@media (min-width:900px){\n [data-bz-node=\"header\"]{height:272px}\n [data-bz-node=\"header-brand\"]{position:absolute;left:22px;top:22px;width:170px}\n [data-bz-node=\"header-info\"]{position:absolute;right:24px;top:47px;width:578px}\n [data-bz-node=\"header-nav-row\"]{position:absolute;left:41px;right:47px;bottom:8px}\n}\n[data-bz-node=\"sell-row\"],[data-bz-node=\"news-row\"]{margin:0 42px}\n[data-bz-node=\"sell-btn\"] .bz-btn,[data-bz-node=\"news-h\"]{display:flex;align-items:center;justify-content:center;width:100%;height:62px;background:#8b0000;border-radius:12px;color:#fff;font:800 38px 'Playfair Display',serif;letter-spacing:.06em;text-transform:uppercase;border:0;padding:0;margin:0;box-shadow:none}\n[data-bz-node=\"sell-btn\"] .bz-btn{text-decoration:none}\n[data-bz-node=\"sell-row\"]{margin-top:47px}\n[data-bz-node=\"sell-row\"] .bz-col,[data-bz-node=\"sell-row\"] .bz-block,[data-bz-node=\"sell-row\"] .bz-buttons{margin:0;padding:0;display:block}\n[data-bz-node=\"info-row\"]{height:264px;overflow:hidden;margin:40px 0 0;padding:0 222px}\n[data-bz-node=\"hours-h\"],[data-bz-node=\"contact-h\"]{font:800 36px 'Playfair Display',serif;letter-spacing:.14em;text-transform:uppercase;color:#1a1a6e;margin:0 0 20px;padding-bottom:14px;border-bottom:4px solid #8b0000;margin-inline:0 38px}\n[data-bz-node=\"contact-h\"]{margin-inline:39px 0;border-bottom-color:#c0113f}\n[data-bz-node=\"hours-t\"] p,[data-bz-node=\"contact-t\"] p{margin:0 0 44px;font:400 20px/1.15 'Montserrat',sans-serif;letter-spacing:.06em;color:#4a4a5a;text-align:center}\n[data-bz-node=\"hours-t\"] strong,[data-bz-node=\"contact-t\"] strong{display:block;font-weight:700;color:#1a1a6e;text-transform:uppercase}\n[data-bz-node=\"news-row\"]{margin-bottom:24px;margin-top:0}\n[data-bz-node=\"map-row\"]{border-top:12px solid #8b0000;border-bottom:12px solid #8b0000}\n[data-bz-node=\"map\"]{height:176px;overflow:hidden}\n[data-bz-node=\"main-nav\"],[data-bz-node=\"main-nav\"] .bz-menu-wrap,[data-bz-node=\"main-nav\"] .bz-menu{width:100%;display:block}\n[data-bz-node=\"hours-h\"] *,[data-bz-node=\"contact-h\"] *,[data-bz-node=\"news-h\"] *{font:inherit;letter-spacing:inherit;color:inherit;margin:0}\n[data-bz-node=\"news-h\"]{letter-spacing:.06em}\n[data-bz-node=\"map\"],[data-bz-node=\"map\"] *{border:0!important;border-radius:0!important;box-shadow:none!important}\n[data-bz-node=\"hours-h\"],[data-bz-node=\"contact-h\"]{letter-spacing:.14em;line-height:1.2;margin-bottom:12px;word-spacing:.35em}\n[data-bz-node=\"hours-h\"] *,[data-bz-node=\"contact-h\"] *{letter-spacing:.14em;word-spacing:.35em}\n[data-bz-node=\"news-row\"]{height:62px}\n[data-bz-node=\"news-h\"],[data-bz-node=\"news-h\"] *{line-height:62px!important;padding:0}\n[data-bz-node=\"sell-btn\"] .bz-btn{line-height:62px}\n[data-bz-node=\"sell-row\"]{height:62px}\n[data-bz-node=\"news-h\"] *{letter-spacing:.06em;position:relative;top:3px}\n",
   "nodes": [
     {
       "id": "header",
@@ -22,9 +22,7 @@
           "id": "header-top",
           "type": "row",
           "props": {
-            "gap": 5,
-            "align": "center",
-            "stackOn": "mobile"
+            "gap": 0
           },
           "children": [
             {
@@ -39,7 +37,13 @@
                   "type": "logo",
                   "props": {
                     "url": "/",
-                    "height": 120
+                    "height": 120,
+                    "image": {
+                      "src": "/logo.png",
+                      "alt": "Allied Truck & Trailer Sales",
+                      "width": 170,
+                      "height": 170
+                    }
                   }
                 }
               ]
@@ -48,15 +52,14 @@
               "id": "header-info",
               "type": "column",
               "props": {
-                "span": 9,
-                "align": "end"
+                "span": 9
               },
               "children": [
                 {
                   "id": "header-contact",
                   "type": "row",
                   "props": {
-                    "gap": 5,
+                    "gap": 0,
                     "stackOn": "mobile"
                   },
                   "children": [
@@ -71,8 +74,7 @@
                           "id": "hc-addr-t",
                           "type": "text",
                           "props": {
-                            "text": "2804 US Highway 220\n\nMadison, NC 27025",
-                            "align": "center"
+                            "text": "2804 US Highway 220\n\nMadison, NC 27025"
                           }
                         }
                       ]
@@ -140,14 +142,16 @@
       "id": "footer",
       "type": "section",
       "props": {
-        "width": "wide",
-        "paddingY": 6
+        "width": "full",
+        "paddingY": 0
       },
       "children": [
         {
           "id": "sell-row",
           "type": "row",
-          "props": {},
+          "props": {
+            "gap": 0
+          },
           "children": [
             {
               "id": "sell-col",
@@ -176,7 +180,7 @@
           "id": "info-row",
           "type": "row",
           "props": {
-            "gap": 6,
+            "gap": 0,
             "stackOn": "mobile"
           },
           "children": [
@@ -191,7 +195,7 @@
                   "id": "hours-h",
                   "type": "heading",
                   "props": {
-                    "text": "\u2605  Hours  \u2605",
+                    "text": "\u2605 Hours \u2605",
                     "headingLevel": 2,
                     "align": "center"
                   }
@@ -200,7 +204,7 @@
                   "id": "hours-t",
                   "type": "text",
                   "props": {
-                    "text": "<strong>Monday \u2013 Friday</strong>\n8am \u2013 5pm\n\n<strong>Weekends</strong>\nBy appointment",
+                    "text": "<strong>Monday \u2013 Friday</strong>\n8am \u2013 5pm\n\n<strong>Weekends</strong>\nBy Appointment",
                     "align": "center"
                   }
                 }
@@ -217,7 +221,7 @@
                   "id": "contact-h",
                   "type": "heading",
                   "props": {
-                    "text": "\u2605  Contact Us  \u2605",
+                    "text": "\u2605 Contact Us \u2605",
                     "headingLevel": 2,
                     "align": "center"
                   }
@@ -226,7 +230,7 @@
                   "id": "contact-t",
                   "type": "text",
                   "props": {
-                    "text": "<strong>Jeff Sellers</strong>\n<a href=\"tel:+13365527401\">(336) 552\u20137401</a>\n\n<strong>Email us today</strong>\n<a href=\"mailto:jfsellers21@hotmail.com\">jfsellers21@hotmail.com</a>",
+                    "text": "<strong>Jeff Sellers</strong>\n(336) 552\u20137401\n\n<strong>Email us today</strong>\njfsellers21@hotmail.com",
                     "align": "center"
                   }
                 }
@@ -237,7 +241,11 @@
         {
           "id": "news-row",
           "type": "row",
-          "props": {},
+          "props": {
+            "gap": 0,
+            "behaviour": "dropdown",
+            "behaviourOptions": "{\"trigger\":\"click\"}"
+          },
           "children": [
             {
               "id": "news-col",
@@ -252,14 +260,16 @@
                   "props": {
                     "text": "Join our newsletter",
                     "headingLevel": 2,
-                    "align": "center"
+                    "align": "center",
+                    "part": "trigger"
                   }
                 },
                 {
                   "id": "news-form",
                   "type": "form",
                   "props": {
-                    "formId": "newsletter"
+                    "formId": "newsletter",
+                    "part": "panel"
                   }
                 }
               ]
@@ -269,7 +279,9 @@
         {
           "id": "map-row",
           "type": "row",
-          "props": {},
+          "props": {
+            "gap": 0
+          },
           "children": [
             {
               "id": "map-col",
