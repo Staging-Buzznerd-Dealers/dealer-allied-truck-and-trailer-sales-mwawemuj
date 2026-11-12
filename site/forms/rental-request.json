@@ -1,7 +1,7 @@
 {
   "id": "rental-request",
   "name": "Request reservation",
-  "status": "live",
+  "status": "draft",
   "system": true,
   "pdpContext": true,
   "surfaces": ["pdp", "page"],

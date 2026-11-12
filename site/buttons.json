@@ -9,16 +9,6 @@
     "active": true
   },
   {
-    "id": "request-rental",
-    "label": "Request a rental",
-    "url": null,
-    "formId": "rental-request",
-    "style": "primary",
-    "intent": "rental-request",
-    "newTab": false,
-    "active": true
-  },
-  {
     "id": "call-us",
     "label": "Call (336) 552-7401",
     "url": "tel:+13365527401",
