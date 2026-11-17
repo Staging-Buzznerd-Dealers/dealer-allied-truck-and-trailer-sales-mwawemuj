@@ -20,8 +20,8 @@
   },
   {
     "id": "call-us",
-    "label": "Call (336) 552-7401",
-    "url": "tel:+13365527401",
+    "label": "Call Us",
+    "url": "tel:+1(336) 552-7401",
     "style": "secondary",
     "intent": "call-dealer",
     "newTab": false,
