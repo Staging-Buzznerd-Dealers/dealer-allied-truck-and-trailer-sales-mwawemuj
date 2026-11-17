@@ -31,3 +31,7 @@
   .nav-toggle{display:flex}
   .mobilenav:not([hidden]){display:flex}
 }
+
+/* Inventory card "Call Us" button */
+main a[href^="tel:"][class*="btn"],main a[href^="tel:"][class*="button"],main a[href^="tel:"][class*="cta"]{background:#b80000;border-color:#b80000;color:#fff}
+main a[href^="tel:"][class*="btn"]:hover,main a[href^="tel:"][class*="button"]:hover,main a[href^="tel:"][class*="cta"]:hover{background:#9a0000;border-color:#9a0000;color:#fff}
