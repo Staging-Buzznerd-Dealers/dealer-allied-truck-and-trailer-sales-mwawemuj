@@ -44,5 +44,13 @@
     "intent": "newsletter-signup",
     "newTab": true,
     "active": true
+  },
+  {
+    "id": "email-us-jfsellers21-hotmail-com",
+    "label": "Email Us (JFSELLERS21@HOTMAIL.COM)",
+    "url": "",
+    "style": "primary",
+    "intent": "email-us-jfsellers21-hotmail-com",
+    "active": true
   }
 ]
