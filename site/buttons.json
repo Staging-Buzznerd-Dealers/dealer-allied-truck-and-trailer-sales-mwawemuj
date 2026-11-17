@@ -47,8 +47,8 @@
   },
   {
     "id": "email-us-jfsellers21-hotmail-com",
-    "label": "Email Us (JFSELLERS21@HOTMAIL.COM)",
-    "url": "",
+    "label": "Email Us ",
+    "url": "mailto:jfsellers21@hotmail.com",
     "style": "primary",
     "intent": "email-us-jfsellers21-hotmail-com",
     "active": true
